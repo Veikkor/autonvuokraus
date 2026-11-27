@@ -4,7 +4,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background: url('../images/background2.jpg') no-repeat center center fixed;
+    background: url('../images/background2.png') no-repeat center center fixed;
     background-size: cover;
     min-height: 100vh;
 }
@@ -125,32 +125,19 @@ input[type="submit"]:hover {
 }
 
 /* Vesileima */
-body::after {
-    content: "Local Note: this is a school project only !!!";
-    position: fixed;
-    bottom: 20px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    font-size: 36px;  /* Isompi fontti */
-    color: rgba(255, 0, 0, 0.7);  /* Punainen väri, vähemmän läpikuultava */
-    font-weight: bold;
-    z-index: -1;
-    text-transform: uppercase;  /* Isot kirjaimet */
-}
 
 /* Viestit (onnistumiset ja virheet) */
 .viesti {
     background-color: #e6f4e6;
-    border: 1px solid #5cb85c;
+    border: 1px solid #5c84b8;
     border-radius: 4px;
     padding: 10px 15px;
 }
 
 .viesti.virhe {
     background-color: #fdeaea;
-    border: 1px solid #d9534f;
-    color: #a94442;
+    border: 1px solid #ff0800;
+    color: #e40f0c;
 }
 
 /* Taulukon sisällä olevat Poista- ja Palauta-lomakkeet: ei omaa laatikkoa */
@@ -169,4 +156,96 @@ td input[type="submit"] {
 table img {
     width: 100px;
     height: auto;
+}
+body {
+    background-color: #f1f4f8;
+    color: #263238;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+}
+
+h1 {
+    color: #8ca4c2;
+    margin-bottom: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #17365d;
+    color: white;
+    padding: 14px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #edf3fa;
+}
+a {
+    display: inline-block;
+    background-color: #17365d;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 6px;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+a:hover {
+    background-color: #286090;
+    transform: translateY(-2px);
+}
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #e8edf4;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+th {
+    background-color: #17365d;
+    color: white;
+    padding: 16px;
+    text-align: left;
+    font-weight: bold;
+}
+
+td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #d3dce8;
+    color: #26374a;
+}
+
+tr:nth-child(even) td {
+    background-color: #dce5ef;
+}
+
+tr:nth-child(odd) td {
+    background-color: #edf2f7;
+}
+
+tr:hover td {
+    background-color: #c5d7eb;
+    transition: 0.2s;
+}
+
+tr:last-child td {
+    border-bottom: none;
 }

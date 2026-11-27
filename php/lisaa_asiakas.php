@@ -91,3 +91,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </form>
 </body>
 </html>
+<p><a href="../index.php">Palaa etusivulle</a></p>

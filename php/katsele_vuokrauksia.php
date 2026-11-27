@@ -45,3 +45,4 @@ $tulos = mysqli_query($yhteys, $sql);
 </table>
 </body>
 </html>
+<p><a href="../index.php">Palaa etusivulle</a></p>

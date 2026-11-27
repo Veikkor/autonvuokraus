@@ -84,3 +84,4 @@ $autot = mysqli_query($yhteys, "SELECT id, valmistaja, malli FROM auto WHERE onk
 </form>
 </body>
 </html>
+<p><a href="../index.php">Palaa etusivulle</a></p>

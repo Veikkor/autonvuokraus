@@ -3,6 +3,15 @@ require_once('db.php');
 $sql = "SELECT * FROM asiakas ORDER BY sukunimi";
 $tulos = mysqli_query($yhteys, $sql);
 ?>
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Asiakkaat</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<h1>Asiakkaat</h1>
 <table>
     <tr>
         <th>Nimi</th>
@@ -22,3 +31,6 @@ $tulos = mysqli_query($yhteys, $sql);
     </tr>
 <?php } ?>
 </table>
+</body>
+</html>
+<p><a href="../index.php">Palaa etusivulle</a></p>
